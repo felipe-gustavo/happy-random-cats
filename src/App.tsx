@@ -1,15 +1,13 @@
-import { AppContainer, AppHeader } from "./App.style";
-import { AppDescription } from "./components/molecules/AppDescription";
-import { AppLogo } from "./components/molecules/AppLogo";
+import { SimpleSnackAlert } from "./components/organisms/SimpleSnackAlert";
+import { Routes } from "./config/Routes";
+import { Providers } from "./contexts/Providers";
 
 function App() {
   return (
-    <AppContainer>
-      <AppHeader>
-        <AppLogo />
-        <AppDescription />
-      </AppHeader>
-    </AppContainer>
+    <Providers>
+      <SimpleSnackAlert />
+      <Routes />
+    </Providers>
   );
 }
 

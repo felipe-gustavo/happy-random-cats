@@ -15,5 +15,4 @@ root.render(
 );
 
 // Analytics. Learn more: https://bit.ly/CRA-vitals
-// eslint-disable-next-line no-console
-reportWebVitals(console.log);
+reportWebVitals();
