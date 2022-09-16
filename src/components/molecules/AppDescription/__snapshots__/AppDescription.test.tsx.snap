@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppDescription /> match with screenshot 1`] = `
+<body>
+  <div>
+    <p>
+      Edit 
+      <code>
+        src/App.tsx
+      </code>
+       and save to reload.
+    </p>
+    <a
+      class="sc-bczRLJ jwNrvz"
+      href="https://reactjs.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Learn React
+    </a>
+  </div>
+</body>
+`;

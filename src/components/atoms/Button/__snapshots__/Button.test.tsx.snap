@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> match screenshot with primary type 1`] = `
+<body>
+  <div>
+    <button
+      class="sc-bczRLJ UDjBw primary"
+      type="button"
+    >
+      some-button-text
+    </button>
+  </div>
+</body>
+`;
+
+exports[`<Button /> match screenshot with secondary type 1`] = `
+<body>
+  <div>
+    <button
+      class="sc-bczRLJ UDjBw secondary"
+      type="button"
+    >
+      some-button-text
+    </button>
+  </div>
+</body>
+`;
