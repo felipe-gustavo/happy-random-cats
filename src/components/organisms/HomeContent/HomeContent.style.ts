@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  padding: 18px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Skeleton = styled(MuiSkeleton)`
-  min-width: ${({ theme }) => theme.breakpoints.down("sm")}px;
+  min-width: ${({ theme }) => theme.breakpoints.values.sm}px;
   max-width: 500px;
   width: 100%;
   ${({ theme }) => theme.breakpoints.down("sm")} {

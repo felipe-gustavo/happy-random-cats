@@ -49,7 +49,7 @@ export function HomeContent() {
   const getImg = () => (
     <>
       {isFetching && (
-        <Skeleton variant="rounded" width={500} height={500} animation="wave" />
+        <Skeleton variant="rounded" height={260} animation="wave" />
       )}
       {url && (
         <img
