@@ -19,7 +19,9 @@ export function useSignUpService() {
   const signUp = useCallback(async () => {
     setIsLoading(true);
     try {
-      return await SignUpService.exec(values);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { ensurePassword, ...userDto } = values;
+      return await SignUpService.exec(userDto);
     } catch (error) {
       if (error instanceof ApiError) {
         if (error.code === t("sign_up.emailAlreadyExists.code")) {
