@@ -1,6 +1,8 @@
 # Happy cats pic
 
-A simple project with sign in/up feature to login in a app with happy cats, enjoy!
+A simple project with sign in/up feature to login in a app with funny cats, enjoy!
+
+[Here is the demo](https://happy-cats-pic.vercel.app/)
 
 ## TODO:
 
