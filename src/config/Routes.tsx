@@ -11,7 +11,7 @@ export function Routes() {
       <Switch>
         <Route path={["/login", "signin"]} component={LoginPage} />
         <Route path="/signup" component={SignUpPage} />
-        <RouteAuthed path="/home" component={Home} />
+        <RouteAuthed path={["/", "/home"]} component={Home} />
       </Switch>
     </BrowserRouter>
   );
