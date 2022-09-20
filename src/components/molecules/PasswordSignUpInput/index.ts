@@ -1,1 +1,1 @@
-export * from "./PasswordEmailInput";
+export * from "./PasswordSignUpInput";
