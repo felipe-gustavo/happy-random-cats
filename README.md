@@ -1,6 +1,11 @@
-# CRA Template
+# Happy cats pic
 
-Put here your project description.
+A simple project with sign in/up feature to login in a app with happy cats, enjoy!
+
+## TODO:
+
+- Add unit test;
+- Integrate with a backend.
 
 ## Pre requisits
 
@@ -50,10 +55,17 @@ yarn start
 
 This project follows the below structure:
 
-- `src/App.js`, here is the app!
-- `src/components/`, here is the components.
+- `src/App.js`, here is the app
 - `src/assets/**`, where the assets stay like locale files, images and others.
+- `src/components/`, here is the components.
 - `src/config/**`, here is the config files, like the `setupTests` and others.
+- `src/context/**`, app contexts datas to share data between components.
+- `src/errors/**`, error instances to aid in the development.
+- `src/hooks/**`, react hooks to aid in the development.
+- `src/mock/**`, a in memory data to simulate a user manipulation.
+- `src/pages/**`, site pages.
+- `src/services/**`, here is the services responsible for retrieve and treat the external data.
+- `src/utils/**`, function to aid in the development.
 
 The test and stories pattern is inline, whithout a specific folder.
 
