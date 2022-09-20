@@ -35,8 +35,11 @@ export function useDoLoginService() {
         }
 
         if (error.code === t("login.invalidPassword.code")) {
-          setErrors({
-            password: t("login.invalidPassword.message"),
+          openAlert({
+            message: t("login.invalidPassword.message"),
+            severity: "error",
+            autoHideDuration: false,
+            enforceCloseByXButton: true,
           });
           return null;
         }
