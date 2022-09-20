@@ -1,0 +1,30 @@
+{
+  "login": {
+    "emailNotFound": {
+      "code": "LOGIN_0001",
+      "message": "Email not found, go register <a href=\"/signup?email={{email}}\" target=\"_blank\">here</a>."
+    },
+    "invalidPassword": {
+      "code": "LOGIN_0002",
+      "message": "Invalid password!"
+    }
+  },
+  "sign_up": {
+    "emailAlreadyExists": {
+      "code": "SIGNUP_0001",
+      "message": "This email is already registered, try to login <a href=\"/login?email={{email}}\">here</a>"
+    }
+  },
+  "cat_pic": {
+    "unknown": {
+      "code": "CATPIC_unknown",
+      "message": "So sorry, we couldn't brighten your day :,("
+    }
+  },
+  "shared": {
+    "unknown": {
+      "code": "unknown",
+      "message": "Something went wrong, try again later."
+    }
+  }
+}

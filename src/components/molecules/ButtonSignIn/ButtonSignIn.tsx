@@ -1,43 +1,25 @@
 import { LoadingButton } from "@mui/lab";
 
-import { ForwardedRef, forwardRef, useImperativeHandle, useMemo } from "react";
+import { forwardRef, useMemo } from "react";
 
+import { useTranslation } from "react-i18next";
+
+import { useLoading } from "@/contexts/Loading";
 import { useLogin } from "@/contexts/Login";
-import { useLoginServices } from "@/hooks/useLoginServices";
 
-export type ButtonSignInProps = Record<string | number, unknown>;
-
-export type ButtonSignInRef = {
-  doLogin: () => Promise<void>;
-};
-
-function ButtonSignInComponent(
-  props: ButtonSignInProps,
-  ref: ForwardedRef<ButtonSignInRef>
-) {
-  const { email, password } = useLogin();
-  const { doLogin, isFetching } = useLoginServices();
+function ButtonSignInComponent() {
+  const { t } = useTranslation();
+  const { email, password, errors } = useLogin();
+  const { loadingState } = useLoading("LOGIN");
 
   const disabled = useMemo(
-    () => !email || !password || isFetching,
-    [email, password, isFetching]
-  );
-
-  const handleClick = async (
-    ev: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
-    await doLogin();
-    ev.preventDefault();
-  };
-
-  useImperativeHandle(
-    ref,
-    () => ({
-      doLogin: async () => {
-        if (!disabled) await doLogin();
-      },
-    }),
-    [disabled, doLogin]
+    () =>
+      !email ||
+      !password ||
+      loadingState ||
+      !!errors.email ||
+      !!errors.password,
+    [email, password, loadingState, errors]
   );
 
   return (
@@ -47,10 +29,9 @@ function ButtonSignInComponent(
       disabled={disabled}
       type="submit"
       variant="contained"
-      onClick={handleClick}
-      loading={isFetching}
+      loading={loadingState}
     >
-      Sign In
+      {t("login.buttons.sign_in")}
     </LoadingButton>
   );
 }

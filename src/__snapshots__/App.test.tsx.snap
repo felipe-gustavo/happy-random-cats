@@ -2,48 +2,6 @@
 
 exports[`<App /> match with the screenshot 1`] = `
 <body>
-  <div>
-    <div
-      class="sc-bczRLJ kIOTIl"
-    >
-      <header
-        class="sc-gsnTZi xxDRN"
-      >
-        <div
-          class="sc-hKMtZM kqqsny"
-          rotate="0"
-        >
-          <svg
-            class="logo"
-            height="40vmin"
-            role="img"
-          >
-            logo.svg
-          </svg>
-          <button
-            class="sc-eCYdqJ iUfoxH primary switch-logo-button"
-            type="button"
-          >
-            Spin logo
-          </button>
-        </div>
-        <p>
-          Edit 
-          <code>
-            src/App.tsx
-          </code>
-           and save to reload.
-        </p>
-        <a
-          class="sc-dkzDqf gIyjLW"
-          href="https://reactjs.org"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  </div>
+  <div />
 </body>
 `;

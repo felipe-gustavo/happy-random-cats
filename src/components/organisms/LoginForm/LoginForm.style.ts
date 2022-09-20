@@ -19,7 +19,7 @@ export const LoginFormContainer = styled.div`
 export const InputsContainer = styled.div`
   min-width: 300px;
 
-  & > .login-input {
+  > .login-input {
     margin: 10px 0;
   }
 `;

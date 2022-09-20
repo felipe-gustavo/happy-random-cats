@@ -7,7 +7,7 @@ const removePlugins = ["ESLintWebpackPlugin", "ModuleScopePlugin"];
  * @param {import("webpack").Configuration} config
  * @param {'development' | 'production'} env
  */
-function override(config) {
+function webpack(config) {
   config.plugins = config.plugins.filter(
     (plugin) => !removePlugins.includes(plugin.constructor.name)
   );
@@ -16,7 +16,20 @@ function override(config) {
     new TsConfigPathsPlugin({ configFile: "./tsconfig.json" })
   );
 
+  config.resolve.fallback = { ...config.resolve.fallback, crypto: false };
+
   return config;
 }
 
-module.exports = override;
+/**
+ * @param {import("ts-jest/dist/types").InitialOptionsTsJest} config
+ * @param {'development' | 'production'} env
+ */
+function jest(config) {
+  return config;
+}
+
+module.exports = {
+  webpack,
+  jest,
+};

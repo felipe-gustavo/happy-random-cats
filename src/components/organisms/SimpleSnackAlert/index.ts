@@ -1,1 +1,1 @@
-export * from './SimpleSnackAlert'
+export * from "./SimpleSnackAlert";

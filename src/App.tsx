@@ -1,6 +1,8 @@
 import { SimpleSnackAlert } from "./components/organisms/SimpleSnackAlert";
+import { Providers } from "./config/Providers";
 import { Routes } from "./config/Routes";
-import { Providers } from "./contexts/Providers";
+
+import "./config/i18n";
 
 function App() {
   return (

@@ -1,0 +1,46 @@
+{
+  "auth": {
+    "verifying": "Verifiyng session, please wait..."
+  },
+  "home": {
+    "alt_img": "Cat picture",
+    "waiting_img_desc": "Wait a second, we'll make your day happy.",
+    "img_desc": "A simple picture to brighten your day!",
+    "img_error": "Sorry, we couldn't brighten your day :,("
+  },
+  "navbar": {
+    "logout": "Logout"
+  },
+  "login": {
+    "title": "Sign in",
+    "inputs": {
+      "email": "Email",
+      "password": "Password"
+    },
+    "buttons": {
+      "sign_in": "Sign in"
+    },
+    "sign_up": "Don't have an account yet? <a href=\"/signup\">Click here to sign up</a>"
+  },
+  "sign_up": {
+    "title": "Sign up",
+    "inputs": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "password": "Password",
+      "ensurePassword": "Retype password"
+    },
+    "buttons": {
+      "sign_up": "Sign up"
+    },
+    "errors": {
+      "password_not_match": "The passwords do not match!"
+    }
+  },
+  "shared": {
+    "errors": {
+      "invalid_email": "Invalid email"
+    }
+  }
+}

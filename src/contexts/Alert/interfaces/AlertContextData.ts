@@ -8,6 +8,7 @@ export interface AlertProps {
   origin?: SnackbarOrigin;
   autoHideDuration?: number | false;
   variant?: MuiAlertProps["variant"];
+  enforceCloseByXButton?: boolean;
 }
 
 export interface AlertContextData {

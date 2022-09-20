@@ -30,6 +30,8 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "import", "eslint-plugin-prettier"],
   rules: {
+    // Enable underscore to _id attribute
+    "no-underscore-dangle": ["error", { allow: ["_id"] }],
     // Disable no spreading parameters to react component
     "react/jsx-props-no-spreading": "off",
     // Prettier code style seetings
