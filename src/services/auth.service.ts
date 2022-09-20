@@ -19,7 +19,7 @@ export class AuthService {
       );
     }
 
-    if (Hash.compare(password, user.password)) {
+    if (!Hash.compare(password, user.password)) {
       throw new ApiError(
         "LOGIN_0002",
         { email, password },
