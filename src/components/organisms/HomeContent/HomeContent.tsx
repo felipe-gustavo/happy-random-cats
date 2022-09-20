@@ -1,9 +1,9 @@
-import { Button, Skeleton, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { HomeContainer, ButtonContainer } from "./HomeContent.style";
+import { HomeContainer, ButtonContainer, Skeleton } from "./HomeContent.style";
 
 import { useAuth } from "@/contexts/Auth/useAuth";
 import { CatPicPayload, RandomCatPic } from "@/services/random-cat-pic.service";
