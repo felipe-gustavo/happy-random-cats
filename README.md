@@ -1,8 +1,13 @@
-# Happy cats pic
+# Happy random cats picture
 
 A simple project with sign in/up feature to login in a app with funny cats, enjoy!
 
 [Here is the demo](https://happy-cats-pic.vercel.app/)
+
+Do signup and enjoy!
+
+![image](https://github.com/felipe-gustavo/happy-random-cats/assets/55498940/97eb398c-08f3-4ab7-9ce9-29190f02af32)
+
 
 ## TODO:
 
